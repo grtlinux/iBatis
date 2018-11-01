@@ -8,7 +8,9 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 public class MyBatisConnectionFactory {
-	private static SqlSessionFactory sqlSessionFactory;
+	
+	private static SqlSessionFactory sqlSessionFactory = null;
+	
 	static {
 		try {
 			String resource = "org/tain/hello/mybatis/config.xml";

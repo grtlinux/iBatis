@@ -9,37 +9,62 @@ import org.tain.hello.vo.Person;
 
 public class MyBatisTestMain {
 	
+	private static final boolean flag = true;
+	
 	public static void main(String args[]) {
 
-		// Mybatis ¼¼¼Ç¿¬°á
+		// Mybatis ì„¸ì…˜ì—°ê²°
 		SqlSession sqlSession = MyBatisConnectionFactory.getSqlSessionFactory().openSession(true);
 		
-		// Mapper ¿¬°á
-		PersonDao person = sqlSession.getMapper(PersonDao.class);
+		// Mapper ì—°ê²°
+		PersonDao personDao = sqlSession.getMapper(PersonDao.class);
 
-		// Select
-		List<Person> persons = null;
-		persons = person.selectAll();
-		for (int i = 0; i < persons.size(); i++) {
-			System.out.println("Person Name : " + persons.get(i).getName());
+		// domain
+		Person p = null;
+		
+		if (flag) {
+			// Insert
+			for (int i=0; i < 20; i++) {
+				p = new Person(String.format("Name-%03d", i));
+				personDao.insert(p);
+			}
+			System.out.println("Insert OK!!");
+		}
+		
+		if (flag) {
+			// Select
+			List<Person> persons = personDao.selectAll();
+			for (int i = 0; i < persons.size(); i++) {
+				System.out.println(">>>>> Person : " + persons.get(i));
+			}
+		}
+		if (flag) {
+			// update
+			p = new Person("Terry");
+			p.setId(14);
+			personDao.update(p);
+			System.out.println("Update Person : " + personDao.selectById(p.getId()));
 		}
 
-		// Insert
-		Person p = new Person();
-		p.setName("Å×½ºÅÍ");
-		person.insert(p);
-		System.out.println("return key : " + p.getId());
-
-		// update
-		p.setId(14);
-		p.setName("Terry");
-		person.update(p);
-		System.out.println("return key : " + p.getId());
-
-		// Delete
-		p.setId(16);
-		person.delete(p.getId());
-		System.out.println("return key : " + p.getId());
+		if (flag) {
+			// Delete
+			personDao.delete(16);
+			System.out.println("Delete OK!!!");
+		}
+		
+		if (flag) {
+			// Select
+			List<Person> persons = personDao.selectAll();
+			for (int i = 0; i < persons.size(); i++) {
+				System.out.println(">>>>> Person : " + persons.get(i));
+			}
+		}
+		
+		if (flag) {
+			// Delete All
+			personDao.deleteAll();
+			System.out.println("Delete All OK!!!");
+		}
 	}
 }
 

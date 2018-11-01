@@ -6,9 +6,10 @@ import org.tain.hello.vo.Person;
 
 public interface PersonDao {
 
-	public List<Person> selectAll(); // ¸ğµç Çà °¡Á®¿À±â
-	public Person selectById(int id); // Æ¯Á¤ÇÑ Çà °¡Á®¿À±â
-	public int insert(Person person); // »ğÀÔ
-	public void update(Person person); // ¾÷µ¥ÀÌÆ®
-	public void delete(int id); // »èÁ¦
+	public List<Person> selectAll();   // ëª¨ë“  í–‰ ê°€ì ¸ì˜¤ê¸°
+	public Person selectById(int id);  // íŠ¹ì •í•œ í–‰ ê°€ì ¸ì˜¤ê¸°
+	public int insert(Person person);  // ì‚½ì…
+	public void update(Person person); // ì—…ë°ì´íŠ¸
+	public void delete(int id);        // ì‚­ì œ
+	public void deleteAll();           // ì‚­ì œ all
 }

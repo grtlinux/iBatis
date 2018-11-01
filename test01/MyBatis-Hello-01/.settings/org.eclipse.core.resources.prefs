@@ -1,0 +1,4 @@
+eclipse.preferences.version=1
+encoding//src/org/tain/hello/dao/PersonDao.java=UTF-8
+encoding//src/org/tain/hello/main/MyBatisTestMain.java=UTF-8
+encoding//src/org/tain/hello/mybatis/MyBatisConnectionFactory.java=UTF-8

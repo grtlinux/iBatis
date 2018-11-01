@@ -5,6 +5,11 @@ public class Person {
 	private int id; 
 	private String name; 
 	
+	public Person() {}
+	public Person(String name) {
+		this.name = name;
+	}
+	
 	/////////////////////////////////////
 	
 	public int getId() {
@@ -20,7 +25,7 @@ public class Person {
 		this.name = name;
 	} 
 	public String toString() {
-		return "id: " + id + " Name: " + name;
+		return String.format("[id=%d, name=%s]", this.id, this.name);
 	}
 }
 
