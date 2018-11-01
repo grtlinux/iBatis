@@ -9,8 +9,8 @@ iBatis samples
 - DTD: http://mybatis.org/dtd/mybatis-3-mapper.dtd
 
 | SqlMapConfig | Configration |  
-| sqlMap | Mapper |  
 |:---------:|:-------:|  
+| sqlMap | Mapper |  
 | resultClass | resultType |  
 
 - Maven Dependency information  
