@@ -42,7 +42,7 @@ References
 > [MyBatis](http://mybatis.org "MyBatis")  
 > [MyBatis Config](http://www.mybatis.org/mybatis-3/ko/configuration.html "MyBatis Config")  
 > [iBatis to MyBatis](http://uwostudy.tistory.com/19 "iBatis to MyBatis")  
-> [MyBatis를 이용한 SAMPLE작성](http://docs.altibase.com/pages/viewpage.action?pageId=7340860 "")  
+> [MyBatis SAMPLE](http://docs.altibase.com/pages/viewpage.action?pageId=7340860 "")  
 > []( "")  
 > []( "")  
 > []( "")  
