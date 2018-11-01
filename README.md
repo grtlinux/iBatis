@@ -43,7 +43,7 @@ References
 > [MyBatis Config](http://www.mybatis.org/mybatis-3/ko/configuration.html "MyBatis Config")  
 > [iBatis to MyBatis](http://uwostudy.tistory.com/19 "iBatis to MyBatis")  
 > [MyBatis SAMPLE](http://docs.altibase.com/pages/viewpage.action?pageId=7340860 "")  
-> []( "")  
+> [mybatis/jpetstore-6](https://github.com/mybatis/jpetstore-6 "mybatis/jpetstore-6")  
 > []( "")  
 > []( "")  
 .....
