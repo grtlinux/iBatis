@@ -8,8 +8,8 @@ iBatis samples
 - parameterMap(x) -> parameterType(o)
 - DTD: http://mybatis.org/dtd/mybatis-3-mapper.dtd
 
-| SqlMapConfig | Configration |  
 |:---------:|:-------:|  
+| SqlMapConfig | Configration |  
 | sqlMap | Mapper |  
 | resultClass | resultType |  
 
