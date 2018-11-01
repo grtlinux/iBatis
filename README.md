@@ -11,7 +11,9 @@ iBatis samples
 | SqlMapConfig | Configration |  
 |:---------:|:-------:|
 | sqlMap | Mapper |
-| resultClass | resultType |  
+| resultClass | resultType |
+|  |  |
+
 
 - Maven Dependency information  
 ```xml
