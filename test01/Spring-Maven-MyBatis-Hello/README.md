@@ -4,7 +4,7 @@ Spring-Maven-MyBatis-Hello
 ```
 [ Project Facet Error ]
 
-    1. org.eclipse.wst.common.project.facet.core.xml
+    1. .settings/org.eclipse.wst.common.project.facet.core.xml
         .....
         <installed facet="jst.web" version="2.5"/>
         .....
