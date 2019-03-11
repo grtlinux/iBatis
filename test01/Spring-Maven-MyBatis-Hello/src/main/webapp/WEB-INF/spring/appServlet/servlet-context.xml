@@ -15,9 +15,6 @@
 
 	<!-- DispatcherServlet Context: defines this servlet's request-processing infrastructure -->
 
-	<!-- Enables the Spring MVC @Controller programming model -->
-	<annotation-driven />
-
 	<!-- Handles HTTP GET requests for /resources/** by efficiently serving up static resources in the ${webappRoot}/resources directory -->
 	<resources mapping="/resources/**" location="/resources/" />
 
@@ -27,8 +24,9 @@
 		<beans:property name="suffix" value=".jsp" />
 	</beans:bean>
 
+	<!-- Enables the Spring MVC @Controller programming model -->
+	<annotation-driven />
 	<context:component-scan base-package="com.example.controller" />
-
 
 
 </beans:beans>
