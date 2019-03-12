@@ -28,13 +28,9 @@ public class HomeController {
 	 */
 	@RequestMapping(value = "/", method = RequestMethod.GET)
 	public String home(Locale locale, Model model) throws Exception{
-
 		logger.info("home");
-		
-		List<MemberVO> memberList = service.selectMember();
-		
+		List<MemberVO> memberList = this.service.selectMember();
 		model.addAttribute("memberList", memberList);
-
 		return "home";
 	}
 	

@@ -18,7 +18,7 @@ public class MemberServiceImpl implements MemberService {
 	@Override
 	public List<MemberVO> selectMember() throws Exception {
 
-		return dao.selectMember();
+		return this.dao.selectMember();
 	}
 
 }

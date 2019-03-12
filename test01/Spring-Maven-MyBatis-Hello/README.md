@@ -17,15 +17,17 @@ Spring-Maven-MyBatis-Hello
             http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd
             .....
 
-    3. Project > Properties : Java Build Path
-        JRE System Library [JavaSE-1.8]
-
-    4. Project > Properties : Java Compiler
-        Compiler compliance level: 1.8
-
-    5. Project > Properties : Project Facets
+        ---> Maven Update
+        
+    3. Project > Properties : Project Facets
         Dynamic Web Module: 2.5
         Java              : 1.8
+
+    4. Project > Properties : Java Build Path   (auto after #3)
+        JRE System Library [JavaSE-1.8]
+
+    5. Project > Properties : Java Compiler    (auto after #3)
+        Compiler compliance level: 1.8
 
 ```
 

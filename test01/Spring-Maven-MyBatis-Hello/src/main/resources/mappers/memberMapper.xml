@@ -5,7 +5,7 @@
 	<!-- 
 		mybatis-config.xml의 typeAlias에 등록해두지 않았다면 
 		
-		<select id="selectMember" resultType="com.example.dto.MemberVO" >
+		<select id="selectMember" resultType="com.example.vo.MemberVO" >
 			SELECT ID, PW ,NAME FROM TEST
 		</select>
 		
@@ -17,3 +17,6 @@
 	</select>
 	
 </mapper>
+
+
+

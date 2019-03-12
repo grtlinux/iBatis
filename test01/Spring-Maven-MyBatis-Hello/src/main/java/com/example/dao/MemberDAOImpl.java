@@ -12,15 +12,15 @@ import com.example.vo.MemberVO;
 @Repository
 public class MemberDAOImpl implements MemberDAO {
 
+	private static final String Namespace = "com.example.mapper.memberMapper";
+	
 	@Inject
 	private SqlSession sqlSession;
-	
-	private static final String Namespace = "com.example.mapper.memberMapper";
 	
 	@Override
 	public List<MemberVO> selectMember() throws Exception {
 
-		return sqlSession.selectList(Namespace+".selectMember");
+		return this.sqlSession.selectList(Namespace + ".selectMember");
 	}
 
 }
